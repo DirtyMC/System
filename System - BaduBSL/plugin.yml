@@ -1,0 +1,21 @@
+name: System
+version: 1.0.0
+main: BaduBSL\System\System
+api: [5.0.0]
+author: BaduBSL
+
+permissions:
+  system.command.coins:
+    default: true
+  system.command.setrank:
+    default: op
+  system.command.tempban:
+    default: op
+  system.command.tempmute:
+    default: op
+  system.command.topstats:
+    default: true
+  system.command.unban:
+    default: op
+  system.command.unmute:
+    default: op

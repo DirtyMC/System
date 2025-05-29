@@ -1,0 +1,49 @@
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  user: System
+  password: Juli2002.
+  database: System
+
+ban_reasons:
+  spam: 3600         # 1 Stunde
+  cheating: 86400    # 1 Tag
+  insult: 21600      # 6 Stunden
+  advertising: 43200 # 12 Stunden
+  other: 900         # 15 Minuten
+
+mute_reasons:
+  spam: 900          # 15 Minuten
+  insult: 3600       # 1 Stunde
+  advertising: 1800  # 30 Minuten
+  flood: 1800        # 30 Minuten
+  other: 900         # 15 Minuten
+
+ranks:
+  default:
+    chat-format: "&7<{name}> &f{message}"
+    nametag-format: "&f{name}"
+    permissions: []
+
+  vip:
+    chat-format: "&a<&2VIP&f {name}&a> &f{message}"
+    nametag-format: "&a[&2VIP&a] &f{name}"
+    permissions:
+      - essentials.vip
+      - essentials.commands.home
+
+  mod:
+    chat-format: "&9[Mod] &7<{name}> &f{message}"
+    nametag-format: "&9[Mod] &r{name}"
+    permissions:
+      - essentials.mod
+      - essentials.commands.ban
+      - essentials.commands.kick
+
+  admin:
+    chat-format: "&4[Admin] &c<{name}> &f{message}"
+    nametag-format: "&4[Admin] &f{name}"
+    permissions:
+      - essentials.admin
+      - essentials.commands.give
+      - essentials.commands.teleport
